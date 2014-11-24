@@ -1,6 +1,6 @@
 {
   "name": "classy-nav",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "Vital Kudzelka <vital.kudzelka@gmail.com>"
   ],
@@ -13,6 +13,6 @@
   "license": "MIT",
   "dependecies": {
     "classy-clearfix": "~0.1.0",
-    "classy-defaults": "~0.1.0"
+    "classy-defaults": "~0.2.0"
   }
 }
