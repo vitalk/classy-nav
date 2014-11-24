@@ -1,0 +1,50 @@
+// Classy navigation.
+//
+// Base classes does not do any assumptions about how it's looks like. It's
+// only provides an implementation of common recipes for different layouts.
+//
+// .nav-vertical - Stacks the nav items into vertical mode.
+// .nav-fit - Occupy the all available width of its parent.
+//
+// Styleguide 3.1.
+
+@classy-nav-namespace: ~"@{classy-namespace}nav";
+
+// 1. Show in one line.
+// 2. No list decorations.
+// 3. No margins.
+// 4. Disable pointer events for active items.
+.@{classy-nav-namespace} {
+    line-height: @unit;
+    list-style: none;   // 2
+    margin: 0;          // 3
+    .clearfix();
+
+    &>li {
+        &,
+        &>a {
+            cursor: pointer;
+            display: inline-block; // 1
+
+            &.active { // 4
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.@{classy-nav-namespace}-vertical {
+    &>li {
+        &,
+        &>a { display: block; }
+    }
+}
+
+.@{classy-nav-namespace}-fit {
+    display: table;
+    width: 100%;
+
+    &>li   { display: table-cell; }
+    &>li>a { display: block; }
+}
