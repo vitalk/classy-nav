@@ -22,17 +22,15 @@
 
     .clearfix();
 
-    &__item {
-        &,
-        &__link {
-            cursor: pointer;
-            display: inline-block;
+    &__item,
+    &__link {
+        cursor: pointer;
+        display: inline-block;
 
-            &_active {
-                // Disable pointer events for active items or links.
-                cursor: not-allowed;
-                pointer-events: none;
-            }
+        &_active {
+            // Disable pointer events for active items or links.
+            cursor: not-allowed;
+            pointer-events: none;
         }
     }
 }
