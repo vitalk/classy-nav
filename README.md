@@ -1,6 +1,6 @@
 # Classy navigation
 
-Base classes does not do any assumptions about how it's looks like. It's only
+Base classes does not do any assumptions about how it’s looks like. It’s only
 provides an implementation of common recipes for different layouts.
 
 ## Installation
