@@ -1,6 +1,6 @@
 # Classy navigation
 
-Base classes does not do any assumptions about how it's looks like. It's only
+Base classes does not do any assumptions about how it’s looks like. It’s only
 provides an implementation of common recipes for different layouts.
 
 ## Installation
@@ -14,10 +14,10 @@ bower install --save classy-nav
 ## Usage
 
 ```html
-<ul class="nav nav--fit">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/contacts">Contacts</a></li>
+<ul class="nav nav_fit">
+  <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
+  <li class="nav__item"><a class="nav__link" href="/about">About</a></li>
+  <li class="nav__item"><a class="nav__link" href="/contacts">Contacts</a></li>
 </ul>
 ```
 
