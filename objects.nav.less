@@ -3,8 +3,8 @@
 // Base classes does not do any assumptions about how it's looks like. It's
 // only provides an implementation of common recipes for different layouts.
 //
-// .nav--vertical - Stacks the nav items into vertical mode.
-// .nav--fit - Occupy the all available width of its parent.
+// .nav_vertical - Stacks the nav items into vertical mode.
+// .nav_fit - Occupy the all available width of its parent.
 //
 // Styleguide 3.1.
 
@@ -20,13 +20,13 @@
     margin: 0;          // 3
     .clearfix();
 
-    &>li {
+    &__item {
         &,
-        &>a {
+        &__link {
             cursor: pointer;
             display: inline-block; // 1
 
-            &.is-active { // 4
+            &_active { // 4
                 cursor: not-allowed;
                 pointer-events: none;
             }
@@ -34,15 +34,15 @@
     }
 }
 
-.@{classy-nav-namespace}--vertical {
-    &>li   { display: list-item; }
-    &>li>a { display: block; }
+.@{classy-nav-namespace}_vertical {
+    &__item { display: list-item; }
+    &__link { display: block; }
 }
 
-.@{classy-nav-namespace}--fit {
+.@{classy-nav-namespace}_fit {
     display: table;
     width: 100%;
 
-    &>li   { display: table-cell; }
-    &>li>a { display: block; }
+    &__item { display: table-cell; }
+    &__link { display: block; }
 }

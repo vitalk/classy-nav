@@ -14,10 +14,10 @@ bower install --save classy-nav
 ## Usage
 
 ```html
-<ul class="nav nav--fit">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/contacts">Contacts</a></li>
+<ul class="nav nav_fit">
+  <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
+  <li class="nav__item"><a class="nav__link" href="/about">About</a></li>
+  <li class="nav__item"><a class="nav__link" href="/contacts">Contacts</a></li>
 </ul>
 ```
 
